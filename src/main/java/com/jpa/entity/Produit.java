@@ -19,7 +19,7 @@ public class Produit extends Model {
 	private float prix;
 	
 	@ManyToOne()
-	@JoinColumn(name="categorie")
+	@JoinColumn(name="categorie",referencedColumnName = "titre")
 	private Categorie categorie;
 	
 	
